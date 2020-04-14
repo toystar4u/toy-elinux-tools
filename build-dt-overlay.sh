@@ -1,5 +1,7 @@
+#!/bin/sh
+
 if [ $# -ne 1 ]; then
-  echo "Usage: $0 device-tree.dts or dtsi"
+  echo "Usage: $0 bitstream.bit"
   exit
 fi
 
