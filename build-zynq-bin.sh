@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# convert from a BIT file to a programmable BIN file for Zynq
+# 
+# toystar, KETI     
+# April, 2020
 
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 bitstream.bit"
