@@ -1,7 +1,12 @@
 #!/bin/sh
+#
+# build DT overlay
+# 
+# toystar, KETI     
+# April, 2020
 
 if [ "$#" -ne 1 ]; then
-  echo "Usage: $0 bitstream.bit"
+  echo "Usage: $0 dt-overlay.dtsi"
   exit
 fi
 
