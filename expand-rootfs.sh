@@ -16,6 +16,7 @@
 # Get the starting offset of the root partition
 PART_START=$(parted /dev/mmcblk0 -ms unit s p | grep "^2" | cut -f 2 -d: | grep -o '[0-9]*')
 [ "$PART_START" ] || return 1
+
 # Return value will likely be error for fdisk as it fails to reload the
 # partition table because the root fs is mounted
 fdisk /dev/mmcblk0 <<EOF
@@ -42,7 +43,9 @@ cat <<\EOF > /etc/init.d/resize2fs_once &&
 # Short-Description: Resize the root filesystem to fill partition
 # Description:
 ### END INIT INFO
+
 . /lib/lsb/init-functions
+
 case "$1" in
   start)
     log_daemon_msg "Starting resize2fs_once" &&
