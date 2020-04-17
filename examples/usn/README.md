@@ -4,7 +4,7 @@
 1. generate a bin file and program it to PL
 ```
 # convert a bit to the bin file
-tools/build-bin.sh examples/usn/led_blinker3.bit
+tools/build-zynq-bin.sh examples/usn/led_blinker3.bit
 
 # programming the bin file to PL
 tools/fpgautils -b examples/usn/led_blinker3.bit.bin
