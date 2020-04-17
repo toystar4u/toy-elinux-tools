@@ -65,6 +65,6 @@ EOF
 
 chmod +x /etc/init.d/resize2fs_once &&
 update-rc.d resize2fs_once defaults &&
-echo "[INFO] Root partition has been resized." && 
-echo "[INFO] The filesystem will be enlarged upon the next reboot"
+echo -e "\e[1;31m[INFO]\e[0m Root partition has been resized" && 
+echo -e "\e[1;31m[INFO]\e[0m] The filesystem will be enlarged upon the next reboot"
 
