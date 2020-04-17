@@ -4,10 +4,10 @@
 1. generate a bin file and program it to PL
 ```
 # convert a bit to the bin file
-tools/build-bin.sh examples/sndoe/led_blinker3.bit
+tools/build-bin.sh examples/usn/led_blinker3.bit
 
 # programming the bin file to PL
-tools/fpgautils -b examples/sndoe/led_blinker3.bit.bin
+tools/fpgautils -b examples/usn/led_blinker3.bit.bin
 ```
 
 
